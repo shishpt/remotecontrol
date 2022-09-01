@@ -11,21 +11,29 @@
 <body>
     <header>
     <!--MENU START-->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#giftcard">Gift Card</a>
-        <a href="#location">Location</a>
-        <a href="contact">Contact</a>
-        <a href="#language">IS</a>
-    </nav>
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+            <div id="myLinks">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#giftcard">Gift Card</a>
+                <a href="#location">Location</a>
+                <a href="contact">Contact</a>
+            </div>
+    </div>
+    <!--mobile menu/hamburger menu-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
     <!--MENU END-->
+    <div class="mainimgcontainer">
         <img src="images/001.png" alt="Call To Action Background" class="cta">
         <h2 class="buon">Buon Appetito!</h2>
         <class id="btn-table">Book A Table</class>
         <!--FLAG PARTIALLY IN IMAGE-->
-    <div class="flag"></div>
-    <div class="gallery"></div>
+        <div class="flag"></div>
+        <div class="gallery"></div>
+    </div>
     </header>
     <main>
         <section>
@@ -77,5 +85,6 @@
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-solid fa-envelope"></i>
     </footer>
-</body>
+    <script src="main.js"></script> 
+    </body>
 </html>

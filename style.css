@@ -29,6 +29,32 @@ footer {
     background-color: #606060;
 }
 
-@media only screen and(min-width:768px) {
-   /* desktop */ 
+@media only screen and (min-width:768px) {
+
+h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #606060;
+        font-size: 240%;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+    
+nav {
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        font-weight: 500;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    
+      }
+    
+nav a {
+        text-decoration: none;
+        color: #606060;
+    }
 }

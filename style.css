@@ -1,5 +1,10 @@
 /* Mobile First */
 
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
 .topnav {
     overflow: hidden;
     position: relative;
@@ -16,6 +21,7 @@
     text-decoration: none;
     font-size: 17px;
     display: block;
+    background-color: #606060;
 }
 
 /* customize hamburger menu */
@@ -54,7 +60,7 @@
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: -1;
 }
 
@@ -107,6 +113,29 @@
     z-index: 2;
     display: relative;
 }
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #606060;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+h2:after {
+    display: block;
+    height: 3px;
+    background-color: black;
+    content: " ";
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    opacity: .04;
+  }
 
 .cta h2 {
     z-index: 2;
@@ -217,7 +246,7 @@ h2:after {
         opacity: .04;
       }
     
-nav {
+.topnav {
 
         margin-top: 8px;
         margin-bottom: 8px;

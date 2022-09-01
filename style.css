@@ -1,8 +1,18 @@
 /* Mobile First */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
 }
 
 .topnav {
@@ -77,15 +87,13 @@ html {
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 5px solid #ce2b37;
-    border-radius: 30px;
+    border: 8px solid white;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 20px;
     transition: .3s ease;
     transition-property: background-color, color;
-    opacity: .5;
 }
 
 #hero .cta1:hover {
@@ -96,6 +104,17 @@ html {
 
 }
 
+.menu {
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 8px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+}
 /* .mainimgcontainer {
     display: relative;
 }
@@ -125,18 +144,6 @@ h2 {
     text-transform: uppercase;
   }
 
-h2:after {
-    display: block;
-    height: 3px;
-    background-color: black;
-    content: " ";
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    opacity: .04;
-  }
-
 .cta h2 {
     z-index: 2;
 }
@@ -148,22 +155,6 @@ footer {
 
 @media only screen and (min-width:768px) {
 
-* {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-html {
-        font-family: 'Montserrat', sans-serif;
-        scroll-behavior: smooth;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-
 .container {
     min-height: 100vh;
     width: 100%;
@@ -172,85 +163,10 @@ html {
     justify-content: center;
 }
 
-#hero {
-    background-image: url(images/001.png);
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-}
-
-#hero::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.7;
-    z-index: -1;
-}
-
-#hero h1 {
-    display: block;
-    width: fit-content;
-    font-size: 4rem;
-    position: relative;
-    color: white;
-}
-
-#hero .cta1 {
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 5px solid #ce2b37;
-    border-radius: 30px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 20px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-    opacity: .5;
-}
-
-#hero .cta1:hover {
-    color: white;
-    background-color: #ce2b37;
-    opacity: .8;
-
-
-}
-
-h2 {
-        margin-top: 0;
-        margin-bottom: 20px;
-        color: #606060;
-        font-size: 240%;
-        word-spacing: 4px;
-        letter-spacing: 1px;
-        text-align: center;
-      }
-
-h2:after {
-        display: block;
-        height: 3px;
-        background-color: black;
-        content: " ";
-        width: 95%;
-        margin: 0 auto;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        opacity: .04;
-      }
-    
 .topnav {
 
         margin-top: 8px;
         margin-bottom: 8px;
-        background-color: #ce2b37;
         overflow: hidden;
       }
 
@@ -263,7 +179,7 @@ nav a {
     padding: 16px 20px;
     text-decoration: none;
     font-size: 16px;
-    color: white;
+    color: red;
     }
 
 nav a:hover{
@@ -307,4 +223,3 @@ h2 {
     margin-left: 30px;
 }
 
-}

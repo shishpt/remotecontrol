@@ -80,6 +80,8 @@ a {
 
 .hero-container {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -151,8 +153,8 @@ a {
 .menubtn {
     position: absolute;
     display: inline-block;
-    padding: 10px 30px;
-    margin: 10px;
+    padding: 0px 30px;
+    margin: 0px;
     color: black;
     background-color: transparent;
     border: 8px solid black;
@@ -163,10 +165,19 @@ a {
     cursor: pointer;
 }
 
+.about {
+    margin-top: 70px;
+}
+
 .aboutPic {
     width: 100%;
     height: auto;
-}
+    max-width: 650px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    }
+
 
 h2 {
     margin-top: 20px;
@@ -200,9 +211,7 @@ h2 {
     text-align: center;
 }
 
-h4 p {
-    text-align: center;
-}
+
 
 .footerContainer:after {
    content: "";
@@ -240,6 +249,7 @@ h2 {
 
 .aboutContainer p {
     margin: 32px;
+    text-align: center;
 }
 
 .aboutPic {
@@ -250,32 +260,28 @@ h2 {
 
 }
 
-
 .contactContainer {
-    border: #606060 solid 3px;
+    width: 100%%;
+    padding: 10px;
     display: flex;
-    width: 100%;
+    justify-content: center;
 }
 
 .contactContainer h3 {
     padding: 5px;
     text-align: center;
-
 }
+
 .contactForm {
     margin-right: 5px;
     padding-right: 5px;;
 }
 
-
-
 .locationContainer {
     display: flex;
     align-items: center;
-}
+    border: #606060 solid 2px;
 
-.locationInfo {
-    margin: 32px;
 }
 
 .locationMap {
